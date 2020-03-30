@@ -1,11 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./fontawesome/css/all.css">
     <title>Login Page</title>
 </head>
+
 <body>
-    
+    <div class="container">
+        <!-- Start Left Side -->
+        <div class="left-side">
+            <img src="./img/radar-angle.png" style="background-color: #6bd4e7;">
+            <img src="./img/logo.png" alt="Logo" style="background-color: red;">
+            <h3>Multi Anti-Virus & Cybersecurity</h3>
+        </div>
+        <!-- End Left Side -->
+
+
+        <!-- Start Right Side -->
+        <div class="right-side">
+            <div class="enter">
+                <h3>ورود</h3>
+            </div>
+
+            <div class="form">
+                <h4>ورود به حساب کاربری</h4>
+                <p>جهت ورود به برنامه نام کاربری و رمز عبور خود را وارد نمایید</p>
+            </div>
+
+            <form class="form-login">
+                <input type="text" placeholder="نام کاربری"><i class="fas fa-user"></i>
+                <input type="password" placeholder="رمز عبور"><i class="fas fa-lock"></i>
+
+                <div class="form-login-security">
+                    <input type="text" placeholder="کد امنیتی"><i class="fas fa-th"></i>
+                    <div class="form-security-random">
+                        <img src="./img/random.jpg">
+                        <i class="fas fa-sync"></i>
+                    </div>
+                </div>
+
+                <button>ورود</button>
+
+                <div class="form-login-remember">
+                    <input type="checkbox">
+                    <span>مرا به خاطر بسپار</span>
+                </div>
+            </form>
+        </div>
+        <!-- End Right Side -->
+    </div>
 </body>
+
 </html>
