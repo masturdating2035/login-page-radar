@@ -32,6 +32,12 @@ body {
     display: flex;
 }
 
+@media only screen and (max-width: 992px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+}
+
 
 /***** Left Side *****/
 .left-side {
@@ -43,6 +49,12 @@ body {
     align-items: center;
     background: rgb(39, 185, 236);
     background: linear-gradient(72deg, rgba(39, 185, 236, 1) 0%, rgba(151, 240, 220, 1) 100%);
+}
+
+@media only screen and (max-width: 992px) {
+    .left-side {
+        width: 100vw;
+    }
 }
 
 
@@ -64,21 +76,26 @@ body {
     animation-delay: 2s;
 }
 
+
 .left-side-logo span:nth-child(3) {
     animation-delay: 3s;
 }
+
 
 .left-side-logo span:nth-child(4) {
     animation-delay: 4s;
 }
 
+
 .left-side-logo span:nth-child(5) {
     animation-delay: 5s;
 }
 
+
 .left-side-logo span:nth-child(6) {
     animation-delay: 6s;
 }
+
 
 @keyframes radar {
     0% {
@@ -106,33 +123,6 @@ body {
         opacity: 0;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -172,6 +162,12 @@ body {
     justify-content: center;
 }
 
+@media only screen and (max-width: 992px) {
+    .right-side {
+        width: 100vw;
+    }
+}
+
 
 .right-side .form-login {
     width: 70%;
@@ -189,10 +185,18 @@ body {
     top: 0;
 }
 
+@media only screen and (max-width: 992px) {
+    .right-side .form-login .enter {
+        display: none;
+    }
+}
+
 
 .right-side .form-login .enter h5 {
     color: #3d9ce9;
 }
+
+
 
 .right-side .form-login .form-login-entry {
     width: 100%;
@@ -210,16 +214,34 @@ body {
     padding-bottom: 50px;
 }
 
+@media only screen and (max-width: 992px) {
+    .right-side .form-login .form-login-entry .form-login-entry-title {
+        padding-bottom: 20px;
+    }
+}
+
 
 .right-side .form-login .form-login-entry .form-login-entry-title p:first-child {
     margin-bottom: 10px;
     font-size: 20px;
 }
 
+@media only screen and (max-width: 1090px) {
+    .right-side .form-login .form-login-entry .form-login-entry-title p:first-child {
+        font-size: 16px;
+    }
+}
+
 .form-login-entry .form-login-entry-title p:last-child {
     margin-bottom: 10px;
     font-size: 13px;
     color: #b7b7b7;
+}
+
+@media only screen and (max-width: 1090px) {
+    .form-login-entry .form-login-entry-title p:last-child {
+        font-size: 11px;
+    }
 }
 
 
@@ -239,6 +261,13 @@ body {
     font-size: 14px;
     color: #bdbdbd;
 }
+
+@media only screen and (max-width: 992px) {
+    .form-login-entry label i {
+        left: 40px;
+    }
+}
+
 
 .form-login-entry label input {
     width: 95%;
@@ -281,17 +310,42 @@ body {
 }
 
 .form-login-entry-security-input {
-    width: 70%;
+    width: 60%;
     position: relative;
 }
 
 .form-login-entry-security-input i {
     position: absolute;
     top: 17px;
-    left: 60px;
+    left: 50px;
     font-size: 14px;
     color: #bdbdbd;
 }
+
+@media only screen and (max-width: 1220px) {
+    .form-login-entry-security-input i {
+        left: 40px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .form-login-entry-security-input i {
+        left: 80px;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    .form-login-entry-security-input i {
+        left: 75px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .form-login-entry-security-input i {
+        left: 65px;
+    }
+}
+
 
 
 
@@ -329,10 +383,16 @@ body {
 }
 
 .form-login-entry-security-random {
-    width: 30%;
+    width: 40%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+}
+
+@media only screen and (max-width: 992px) {
+    .form-login-entry-security-random img{
+        width: 50%;
+    }
 }
 
 .form-login-entry-security-random i {
@@ -340,6 +400,14 @@ body {
     font-size: 14px;
     font-weight: lighter;
     transform: rotate(-30deg);
+    margin-right: 5px;
+}
+
+
+@media only screen and (max-width: 992px) {
+    .form-login-entry-security-random i{
+        font-size: 16px;
+    }
 }
 
 
@@ -369,6 +437,13 @@ body {
     justify-content: flex-start;
     align-items: center;
 }
+
+@media only screen and (max-width: 992px) {
+    .form-login-remember{
+        margin-bottom: 20px;
+    }
+}
+
 
 .form-login-remember input {
     margin-left: 5px;
