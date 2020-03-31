@@ -36,22 +36,108 @@ body {
 /***** Left Side *****/
 .left-side {
     width: 60vw;
-    height: 100%;
+    height: 100vh;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.left-side img:first-child {
-    width: 100%;
-    height: 100vh;
-    position: relative;
     background: rgb(39, 185, 236);
     background: linear-gradient(72deg, rgba(39, 185, 236, 1) 0%, rgba(151, 240, 220, 1) 100%);
 }
 
+
+.left-side-logo span {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border: 0.06px solid #fff;
+    border-radius: 50%;
+    animation: radar 6s linear infinite;
+    opacity: 0;
+}
+
+.left-side-logo span:nth-child(1) {
+    animation-delay: 1s;
+}
+
+.left-side-logo span:nth-child(2) {
+    animation-delay: 2s;
+}
+
+.left-side-logo span:nth-child(3) {
+    animation-delay: 3s;
+}
+
+.left-side-logo span:nth-child(4) {
+    animation-delay: 4s;
+}
+
+.left-side-logo span:nth-child(5) {
+    animation-delay: 5s;
+}
+
+.left-side-logo span:nth-child(6) {
+    animation-delay: 6s;
+}
+
+@keyframes radar {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    25% {
+        transform: scale(0);
+        opacity: 0.3;
+    }
+
+    50% {
+        transform: scale(1);
+        opacity: .7;
+    }
+
+    75% {
+        transform: scale(1.5);
+        opacity: 0.3;
+    }
+
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .left-side .left-side-logo {
-    width: 20%;
+    width: 25%;
     position: absolute;
     display: flex;
     justify-content: center;
@@ -62,9 +148,9 @@ body {
 .left-side .left-side-logo img {
     width: 55%;
     height: 100%;
-    background-color: yellow;
-    z-index: 100;
+    background-color: transparent;
     color: #ffffff;
+    z-index: 100;
 }
 
 .left-side h4 {
@@ -290,7 +376,7 @@ body {
     background-color: #333;
 }
 
-.form-login-remember span{
+.form-login-remember span {
     color: #bdbdbd;
     font-size: 12px;
 }
