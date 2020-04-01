@@ -38,7 +38,6 @@ body {
     }
 }
 
-
 /***** Left Side *****/
 .left-side {
     width: 60vw;
@@ -58,13 +57,13 @@ body {
 }
 
 
-.left-side-logo span {
+.left-side-logo .pulse {
     position: absolute;
     width: 300px;
     height: 300px;
     border: 0.06px solid #fff;
     border-radius: 50%;
-    animation: radar 6s linear infinite;
+    animation: pulse 6s linear infinite;
     opacity: 0;
 }
 
@@ -97,7 +96,7 @@ body {
 }
 
 
-@keyframes radar {
+@keyframes pulse {
     0% {
         transform: scale(0);
         opacity: 0;
@@ -123,6 +122,34 @@ body {
         opacity: 0;
     }
 }
+
+
+.left-side-logo .radar {
+    width: 10%;
+    min-height: 100%;
+    display: inline-block;
+    transform-origin: 100% 100%;
+    position: absolute;
+    top: -50%;
+    left: 40%;
+    background: linear-gradient(70deg, transparent 30%, white), transparent;
+    animation: radar 6s linear infinite;
+}
+
+
+@keyframes radar{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
 
 
 
@@ -390,7 +417,7 @@ body {
 }
 
 @media only screen and (max-width: 992px) {
-    .form-login-entry-security-random img{
+    .form-login-entry-security-random img {
         width: 50%;
     }
 }
@@ -405,7 +432,7 @@ body {
 
 
 @media only screen and (max-width: 992px) {
-    .form-login-entry-security-random i{
+    .form-login-entry-security-random i {
         font-size: 16px;
     }
 }
@@ -439,7 +466,7 @@ body {
 }
 
 @media only screen and (max-width: 992px) {
-    .form-login-remember{
+    .form-login-remember {
         margin-bottom: 20px;
     }
 }
