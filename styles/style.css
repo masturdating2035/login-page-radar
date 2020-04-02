@@ -34,7 +34,7 @@ body {
 
 @media only screen and (max-width: 992px) {
     .container {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 }
 
@@ -45,15 +45,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
     overflow: hidden;
+    position: relative;
 }
 
-@media only screen and (max-width: 992px) {
-    .left-side {
-        width: 100vw;
-    }
-}
 
 
 .left-side .radar {
@@ -62,7 +57,6 @@ body {
     left: 30vw;
     opacity: 0.5;
     transform-origin: bottom left;
-    overflow: hidden;
     animation: radar 6s infinite linear;
 }
 
@@ -290,6 +284,18 @@ body {
     }
 }
 
+@media only screen and (max-width: 760px) {
+    .form-login-entry label i {
+        left: 30px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .form-login-entry label i {
+        left: 20px;
+    }
+}
+
 
 .form-login-entry label input {
     width: 95%;
@@ -368,6 +374,12 @@ body {
     }
 }
 
+
+@media only screen and (max-width: 650px) {
+    .form-login-entry-security-input i {
+        left: 55px;
+    }
+}
 
 
 
